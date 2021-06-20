@@ -7,9 +7,24 @@ export const NavbarWrapper = styled.div`
 	width: 100%;
 	background-color: black;
 	margin: 0.5% auto;
+	color: #e5e5e5;
+	align-items: center;
 	.logo {
 		margin: 1%;
 		justify-self: left;
+	}
+	.phoneMenu {
+		display: none;
+	}
+	@media only screen and (max-width: 600px) {
+		.phoneMenu {
+			display: block;
+			margin-left: 50% !important;
+			color: white;
+			font-size: 200%;
+			margin: 2%;
+			z-index: 100;
+		}
 	}
 `;
 export const NavWrapper = styled.div`
@@ -23,7 +38,6 @@ export const NavWrapper = styled.div`
 	}
 	.nav__item {
 		text-transform: uppercase;
-		color: #e5e5e5;
 	}
 	.nav__item-dropdown {
 		.dropdown-icon {
@@ -46,5 +60,14 @@ export const NavWrapper = styled.div`
 	.nav__item-border {
 		border-style: solid;
 		padding: 3%;
+	}
+	@media only screen and (max-width: 600px) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		flex-direction: column;
+		background-color: black;
+		width: 100%;
+		height: 100%;
 	}
 `;
