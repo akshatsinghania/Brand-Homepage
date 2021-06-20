@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavbarWrapper = styled.div`
-	position: fixed;
+	position: sticky;
 	display: flex;
 	height: 12%;
 	width: 100%;
